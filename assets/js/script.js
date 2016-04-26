@@ -28,11 +28,11 @@ $(document).ready(function(){
 		$('.section-item').addClass('hover');
 	});
 
-	$('.navbar-container').waypoint(function(direction) {
+	$('.content-container').waypoint(function(direction) {
 		if (direction == 'down') {
-			$('.navbar-container').addClass('sticky');
+			$('#nav').addClass('sticky');
 		} else {
-			$('.navbar-container').removeClass('sticky');
+			$('#nav').removeClass('sticky');
 		}
 	});
 

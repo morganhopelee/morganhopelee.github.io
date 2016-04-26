@@ -172,8 +172,9 @@ a {
 }
 
 .contact-item {
-	float: left;
-	color: white;
+	display: inline-block;
+	color: #75B9BE;
+	font-size: 16px;
 	padding: 20px;
 	font-weight: lighter;
 	/*visibility: hidden;*/
@@ -185,6 +186,8 @@ a {
 
 .sticky {
     position: fixed;
+    z-index: 100;
+    opacity: 0.8;
     top: 0;
 }
 
