@@ -1,94 +1,102 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Janet Loves Chicken</title>
+        <title>MHL</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
         <link rel="stylesheet" href="assets/css/style.css">
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
-        </script> 
-        <script src = "assets/js/script.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
+        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/script.js"></script>
     </head>
     <body>
-        <!-- Sidebar Hamburger Icon -->
-        <!-- <div id = "sidebar-button">
-            <a id="nav-toggle">
-                <span></span>
-            </a>
-        </div> -->
-        <!-- Navbar -->
-        <div class="navbar-container">
-            <div class="navbar">
-                <div class="navbar-title">Janet Loves Chicken</div>
-                <div class="navbar-item-container">
-                    <div class="navbar-item">Home</div>
-                    <div class="navbar-item">About</div>
-                    <div class="navbar-item">Recipes</div>
+        <!-- Home Container -->
+        <div class="home-container">
+            <img src="assets/img/blue_moon.jpeg" class="moon-img">
+                <div class="information">
+                    <div class="name">Morgan Lee</div>
+                    <!-- <div class="blurb">Web Designer & Developer</div> -->
+                    <div class="blurb">Cognitive Science, Class of 2017</div>
                 </div>
             </div>
         </div>
+        <!-- have name and blurb fadeOut as you scroll down, fade back in when you scroll back up -->
 
-        <!-- Page Wrapper, Consisting of All the Sections -->
-        <div class = "page-wrapper">
-            <!-- Carousel Section -->
-            <section class = "section" id = "carousel-section"> 
-                <div class = "carousel-container">
-                <!-- Question 2: Carousel Code Here -->
-                    <div id="carousel">
-                        <div class="carousel-item">
-                            <div class="quote">
-                                For now we see in a mirror dimly, but then face to face. Now I know in part; then I shall know fully, even as I have been fully known.
-                                <div class="author">1 Corinthians 13:12</div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="quote">
-                                I believe that unarmed truth and unconditional love will have the final word in reality.
-                                <div class="author">Martin Luther King, Jr.</div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="quote">
-                                The two most important days in your life are the day you were born and the day you figure out why.
-                                <div class="author">Mark Twain</div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="quote">
-                                How lucky I am to have something that makes saying goodbye so hard.
-                                <div class="author">A. A. Milne</div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="quote">
-                                Look for yourself, and you will find in the long run only hatred, loneliness, despair, rage, ruin, and decay. But look for Christ and you will find Him, and with Him everything else thrown in.
-                                <div class="author">C. S. Lewis</div>
-                            </div>
-                        </div>
+        <!-- Navbar -->
+        <div class="navbar-container">
+            <div class="navbar">
+                <div class="navbar-item">Home</div>
+                <div class="navbar-item">About</div>
+                <div class="navbar-item">Books</div>
+                <div class="navbar-item">Music</div>
+            </div>
+        </div>
+        <!-- have the navbar items only appear when you scroll past the the home container!!! -->
+
+        <!-- Page Container -->
+        <div class="page-container">
+
+            <!-- About Section -->
+            <section class="section" id = "about-section">
+                <!-- <div class="description">I am a junior studying Cognitive Science at UC Berkeley.</div>  -->
+                <div class="description">Hello there! I'm a person who loves to read, write, and make "good" puns. Below is a display of a few of my favorite things.</div>
+            </section>
+
+            <!-- Books Section -->
+            <section class="section" id="books-section">
+                <div class="title">Books</div>
+                    <div class="section-item">
+                        <a href="#" id="link" target="_blank"><img src="assets/img/the_giver.jpg"></a>
                     </div>
-                <!-- End Question 2 Here (Use as many lines as needed, but don't add code below this point)-->
+                    <div class="section-item">
+                        <a href="#" id="link" target="_blank"><img src="assets/img/a_tale_of_two_cities.jpg"></a>
+                    </div>
+                    <div class="section-item">
+                        <a href="#" id="book-link" target="_blank"><img src="assets/img/mere_christianity.jpg"></a>
+                    </div>
+                    <div class="section-item">
+                        <a href="#" id="book-link" target="_blank"><img src="assets/img/mere_christianity.jpg"></a>
+                    </div>
+                    <div class="section-item">
+                        <a href="#" id="book-link" target="_blank"><img src="assets/img/mere_christianity.jpg"></a>
+                    </div>
+                    <div class="section-item">
+                        <a href="#" id="book-link" target="_blank"><img src="assets/img/mere_christianity.jpg"></a>
+                    </div>
+                </div>
+                <!-- <div class="item-description"></div>
+                <div class="item-description"></div>
+                <div class="item-description"></div>
+                <div class="item-description"></div>
+                <div class="item-description"></div>
+                <div class="item-description"></div> -->
+            </section>
+
+
+            <!-- Music Section -->
+            <section class="section" id="music-section">
+                <div class="title">Music</div>
+                <div class="section-item">
+                    <a href="#" id="link" target="_blank"><img src="assets/img/coldplay.jpg"></a>
+                </div>
+                <div class="section-item">
+                    <a href="#" id="link" target="_blank"><img src="assets/img/audrey_assad.jpg"></a>
+                </div>
+                <div class="section-item">
+                    <a href="#" id="link" target="_blank"><img src="assets/img/parov_stelar.jpg"></a>
                 </div>
             </section>
-            <!-- Name Section -->
-            <section class = "section" id = "name-section">
-                <div class = "text" id = "name-text">
-                    I am Morgan Lee.
-                </div>
-            </section>
-            <!-- Major Section -->
-            <section class = "section" id = "major-section">
-                <div class = "text" id = "major-text">
-                    I am majoring in Cognitive Science.
-                </div>
-            </section>
-            <!-- Random Fact Section -->
-            <section class = "section" id = "fact-section">
-                <div class = "text" id = "fact-text">
-                    I love reading, writing, and making "good" puns.
-                </div>
-            </section>
+        </div>
+
+        <!-- add a href links to each of the divs -->
+        <div class="contact-container">
+            <div class="contact-item">LINKEDIN</div>
+            <div class="contact-item">TWITTER</div>
+            <div class="contact-item">SCROLL</div>
         </div>
     </body>
 </html>
