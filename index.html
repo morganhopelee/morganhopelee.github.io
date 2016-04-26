@@ -2,9 +2,9 @@
 <html>
     <head>
         <title>MHL</title>
-        <meta charset="utf-8">
+        <!-- <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" /> -->
         <link rel="stylesheet" href="assets/css/style.css">
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
@@ -14,7 +14,7 @@
         <script src="assets/js/script.js"></script>
     </head>
     <body>
-        <!-- Home Container -->
+        <!-- HOME CONTAINER -->
         <div class="home-container">
             <img src="assets/img/blue_moon.jpeg" class="moon-img">
                 <div class="information">
@@ -26,28 +26,70 @@
         </div>
         <!-- have name and blurb fadeOut as you scroll down, fade back in when you scroll back up -->
 
-        <!-- Navbar -->
-        <div class="navbar-container">
-            <div class="navbar">
-                <div class="navbar-item">Home</div>
-                <div class="navbar-item">About</div>
-                <div class="navbar-item">Books</div>
-                <div class="navbar-item">Music</div>
+        <!-- CONTENT CONTAINER -->
+        <div class="content-container">
+            <!-- NAV-->
+            <!-- <div class="navbar-container">
+                <div class="navbar">
+                    <div class="navbar-item">Home</div>
+                    <div class="navbar-item">About</div>
+                    <div class="navbar-item">Books</div>
+                    <div class="navbar-item">Music</div>
+                </div>
+            </div> -->
+
+            <div id="nav">
+                <div class="container">
+                    <div class="nav-title">MHL</div>
+                    <div class="nav-item-container">
+                        <div class="nav-item"><a href=".home-container">Home</a></div>
+                        <div class="nav-item"><a href="#about">About</a></div>
+                        <div class="nav-item"><a href="#books">Books</a></div>
+                        <div class="nav-item"><a href="#music">Music</a></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
             </div>
-        </div>
-        <!-- have the navbar items only appear when you scroll past the the home container!!! -->
+            <!-- have the navbar items only appear when you scroll past the the home container!!! -->
 
-        <!-- Page Container -->
-        <div class="page-container">
-
-            <!-- About Section -->
-            <section class="section" id = "about-section">
+            <!-- ABOUT -->
+            <div id="about">
+                <div class="container">
+                    <!-- <div class="description">I am a junior studying Cognitive Science at UC Berkeley.</div>  -->
+                    <div class="description">Hello there! I'm a person who loves to read, write, and make "good" puns. Below is a display of a few of my favorite things.</div>
+                </div>                
+            </div>
+            <!-- <section class="section" id = "about-section"> -->
                 <!-- <div class="description">I am a junior studying Cognitive Science at UC Berkeley.</div>  -->
-                <div class="description">Hello there! I'm a person who loves to read, write, and make "good" puns. Below is a display of a few of my favorite things.</div>
-            </section>
+                <!-- <div class="description">Hello there! I'm a person who loves to read, write, and make "good" puns. Below is a display of a few of my favorite things.</div>
+            </section> -->
 
-            <!-- Books Section -->
-            <section class="section" id="books-section">
+            <!-- BOOKS -->
+            <div id="books">
+                <div class="container">
+                    <div class="books-title">Books</div>
+                    <div class="section-item">
+                        <a href="#" id="link" target="_blank"><img src="assets/img/the_giver.jpg"></a>
+                    </div>
+                    <div class="section-item">
+                        <a href="#" id="link" target="_blank"><img src="assets/img/a_tale_of_two_cities.jpg"></a>
+                    </div>
+                    <div class="section-item">
+                        <a href="#" id="book-link" target="_blank"><img src="assets/img/mere_christianity.jpg"></a>
+                    </div>
+                    <div class="section-item">
+                        <a href="#" id="book-link" target="_blank"><img src="assets/img/lord_of_the_flies.jpg"></a>
+                    </div>
+                    <div class="section-item">
+                        <a href="#" id="book-link" target="_blank"><img src="assets/img/the_bell_jar.jpg"></a>
+                    </div>
+                    <div class="section-item">
+                        <a href="#" id="book-link" target="_blank"><img src="assets/img/the_voyage_of_the_dawn_treader.jpg"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <section class="section" id="books-section">
                 <div class="title">Books</div>
                     <div class="section-item">
                         <a href="#" id="link" target="_blank"><img src="assets/img/the_giver.jpg"></a>
@@ -67,18 +109,32 @@
                     <div class="section-item">
                         <a href="#" id="book-link" target="_blank"><img src="assets/img/mere_christianity.jpg"></a>
                     </div>
-                </div>
+                </div> -->
                 <!-- <div class="item-description"></div>
                 <div class="item-description"></div>
                 <div class="item-description"></div>
                 <div class="item-description"></div>
                 <div class="item-description"></div>
                 <div class="item-description"></div> -->
-            </section>
+            <!-- </section> -->
 
 
-            <!-- Music Section -->
-            <section class="section" id="music-section">
+            <!-- MUSIC -->
+            <div id="music">
+                <div class="container">
+                    <div class="music-title">Music</div>
+                    <div class="section-item">
+                        <a href="#" id="link" target="_blank"><img src="assets/img/coldplay.jpg"></a>
+                    </div>
+                    <div class="section-item">
+                        <a href="#" id="link" target="_blank"><img src="assets/img/audrey_assad.jpg"></a>
+                    </div>
+                    <div class="section-item">
+                        <a href="#" id="link" target="_blank"><img src="assets/img/parov_stelar.jpg"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <section class="section" id="music-section">
                 <div class="title">Music</div>
                 <div class="section-item">
                     <a href="#" id="link" target="_blank"><img src="assets/img/coldplay.jpg"></a>
@@ -89,11 +145,12 @@
                 <div class="section-item">
                     <a href="#" id="link" target="_blank"><img src="assets/img/parov_stelar.jpg"></a>
                 </div>
-            </section>
+            </section> -->
         </div>
 
-        <!-- add a href links to each of the divs -->
+        <!-- CONTACT CONTAINER -->
         <div class="contact-container">
+            <!-- add a href links to each of the divs -->
             <div class="contact-item">LINKEDIN</div>
             <div class="contact-item">TWITTER</div>
             <div class="contact-item">SCROLL</div>
