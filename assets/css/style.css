@@ -4,6 +4,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: lighter;
     color: #75B9BE;
+    background-color: rgba(24, 24, 24, 1);
 }
 
 /* START OF HOME CONTAINER */
@@ -63,8 +64,11 @@ body {
 .section-item {
 	float: left;
 	padding: 25px;
-	opacity: 0.7;
-   	transition: 1s;
+	margin: 0px;
+	left: 50%;
+	-webkit-transform: translateX(33%) translateY(10%);
+    -moz-transform: translateX(33%) translateY(10%);
+   	transform: translateX(33%) translateY(10%);
 }
 
 .section-item img {
@@ -72,18 +76,57 @@ body {
 	width: 300px;
 	overflow: hidden;
 	object-fit: cover;
-	margin: 0px;
-	left: 50%;
-	-webkit-transform: translateX(35%) translateY(10%);
-    -moz-transform: translateX(35%) translateY(10%);
-   	transform: translateX(35%) translateY(10%);
 }
+
+.toggle {
+	cursor: pointer;
+}
+
+.popover {
+	background: black;
+	width: 300px;
+	opacity: 0;
+	color: white;
+	text-align: center;
+	height: 300px;
+	position: absolute;
+	top: 25px;
+	transition: 0.4s;
+}
+
+.popover-active {
+    opacity: 0.8;
+    z-index: 100;
+    cursor: pointer;
+    /*transform: translateY(20px);*/
+}
+
+/*.button-link {
+	background-color: rgba(0, 52, 70, 1);
+	border-radius: 5px;
+	color: white;
+	padding: 10px;
+	width: 70px;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-30%);
+    -moz-transform: translateX(-50%) translateY(-30%);
+   	transform: translateX(-50%) translateY(-30%);
+}*/
 
 /* NAV CSS */
 
 a {
 	text-decoration: none;
 	color: #75B9BE;
+	opacity: 1;
+	transition: 1s;
+}
+
+a:hover {
+	opacity: 0.5;
+	transition: 1s;
 }
 
 #nav {
@@ -100,6 +143,7 @@ a {
     float: left;
     line-height: 24px;
     padding: 20px;
+    margin-left: 20px;
 }
 
 .nav-item-container {
@@ -117,6 +161,7 @@ a {
     line-height: 24px;
     margin-left: 36px;
     font-weight: 300;
+    margin-right: 20px;
 }
 
 /* ABOUT CSS */
@@ -141,7 +186,9 @@ a {
 
 #books {
 	height: 900px;
+	position: relative;
 	background-color: rgba(24, 24, 24, 1);
+	margin-top: 60px;
 }
 
 .books-title {
@@ -149,16 +196,47 @@ a {
 	font-size: 34px;
 }
 
+.quote {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+   	transform: translateX(-50%) translateY(-50%);
+}
+
 /* MUSIC CSS */
 
 #music {
 	height: 500px;
+	position: relative;
 	background-color: rgba(24, 24, 24, 1);
 }
 
 .music-title {
 	text-align: center;
 	font-size: 34px;
+}
+
+.song {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+   	transform: translateX(-50%) translateY(-50%);
+}
+
+.song-link {
+	background-color: rgba(0, 52, 70, 1);
+	padding: 10px;
+	width: 70px;
+	position: absolute;
+	top: 75%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+   	transform: translateX(-50%) translateY(-50%);
 }
 
 /* END OF CONTENT CONTAINER */
@@ -168,6 +246,7 @@ a {
 .contact-container {
 	height: 60px;
 	width: 100%;
+	position: relative;
 	background-color: rgba(0, 52, 70, 1);
 }
 
@@ -177,6 +256,7 @@ a {
 	font-size: 16px;
 	padding: 20px;
 	font-weight: lighter;
+	left: 50%;
 	/*visibility: hidden;*/
 }
 
@@ -197,7 +277,7 @@ a {
 
 /* For smaller resolutions */
 
-/*@media (max-width: 480px) { 
+@media (max-width: 480px) { 
 	#header { 
 		float: none;
 		padding: 20px 0;
@@ -234,9 +314,9 @@ a {
 	#container { 
 		padding: 10px;
 	}
-}*/
+}
 
-/* old stuff */
+/* OLD STUFF */
 
 .item-description {
 	visibility:;

@@ -24,16 +24,35 @@ $(document).ready(function(){
 	// 	}
 	// });
 
-	$('.section-item').hover(function() {
-		$('.section-item').addClass('hover');
-	});
-
 	$('.content-container').waypoint(function(direction) {
 		if (direction == 'down') {
 			$('#nav').addClass('sticky');
 		} else {
 			$('#nav').removeClass('sticky');
 		}
+	});
+
+	$('.toggle').click(function() {
+		var parent = $(this).parent();
+		var popover = parent.find('.popover');
+		if (popover.hasClass('popover-active')) {
+			popover.removeClass('popover-active');
+			setTimeout(function(){
+				popover.hide();
+			}, 400);	
+		} else {
+			popover.show();
+			setTimeout(function(){
+				popover.addClass('popover-active');
+			}, 0);
+		}
+	});
+
+	$('.popover').click(function() {
+		$('.popover').removeClass('popover-active');
+		setTimeout(function(){
+			$('.popover').hide();
+		}, 400);
 	});
 
 	// $(window).scroll(function(){
