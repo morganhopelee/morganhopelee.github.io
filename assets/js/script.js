@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+	/* Parallax Function */
 	function parallax() {
 		var scrolled = $(window).scrollTop();
     	$(".moon-img").css("top", -(scrolled * 0.4) + "px");
@@ -24,6 +25,7 @@ $(document).ready(function(){
 	// 	}
 	// });
 
+	/* Fixed Navbar Function */
 	$('.content-container').waypoint(function(direction) {
 		if (direction == 'down') {
 			$('#nav').addClass('sticky');
@@ -32,6 +34,7 @@ $(document).ready(function(){
 		}
 	});
 
+	/* Quote Popover Function */
 	$('.toggle').click(function() {
 		var parent = $(this).parent();
 		var popover = parent.find('.popover');
@@ -55,23 +58,7 @@ $(document).ready(function(){
 		}, 400);
 	});
 
-	// $(window).scroll(function(){
-	// 	/* This function tells you how far you have 
-	// 	scrolled from the top off the page */
-	// 	var offsetY = $(window).scrollTop();
-	// 	console.log(offsetY);
-		
-	// });
-
-	//  Add waypoints code here 
-	// $('#nav').waypoint(function(direction) {
-	// 	if (direction == 'down') {
-	// 		$('#nav').addClass('sticky');
-	// 	} else {
-	// 		$('#nav').removeClass('sticky');
-	// 	}
-	// });
-
+	/* Navbar Scroll Function */
 	$("a").click(function() {
 	    $('html, body').animate({
 	      scrollTop: $( $.attr(this, 'href')).offset().top
