@@ -280,6 +280,14 @@ a:hover {
 	left: 50%;
 }
 
+.icon {
+	height: 20px;
+	width: 20px;
+	left
+	-webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
 /* END OF CONTACT CONTAINER */
 
 /* jQuery Manipulation Classes */
